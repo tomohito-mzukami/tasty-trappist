@@ -20,6 +20,28 @@ h1 {
     margin: 1rem 0;
     font-size: 2.5rem;
 }
+footer {
+    color:white;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 80ch;
+    text-align: left;
+}
+
+/* ナビゲーションのスタイル */
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: #ff9776;
+}
+
 /* ナビゲーションのスタイル */
 
 .nav-links {
@@ -63,12 +85,8 @@ h1 {
       display: inline-block;
       padding: 15px 20px;
     }
+    .hamburger {
+      display: none;
+    }
   
   }
-footer {
-    color:white;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 80ch;
-    text-align: left;
-}
