@@ -1,7 +1,10 @@
 ---
+import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import '../styles/global.css';
 const items = ["犬", "猫", "鳥"];
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -34,9 +37,7 @@ const items = ["犬", "猫", "鳥"];
 				</linearGradient>
 			</defs>
 		</svg>
-		<a href="/">ホーム</a>
-		<a href="/about/">概要</a>
-		<a href="/blog/">ブログ</a>
+		<Header />
 		<h1>私のAstroサイト</h1>
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
@@ -65,6 +66,7 @@ const items = ["犬", "猫", "鳥"];
 			/>
 		</ul>
 	</main>
+	<Footer />
 </Layout>
 
 <style>

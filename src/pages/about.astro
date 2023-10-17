@@ -1,5 +1,7 @@
 ---
+import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 const pageTitle = "私について";
 const identity = {
@@ -22,9 +24,7 @@ const fontWeight = "bold"
 		<meta name="viewport" content="width=device-width" />
 		<title>Astro</title>
 	</head>
-		<a href="/">ホーム</a>
-		<a href="/about/">概要</a>
-		<a href="/blog/">ブログ</a>
+		<Header />
 		<body>
 			<h1>私のAstroサイト</h1>
 			<h1>{pageTitle}</h1>
@@ -49,6 +49,7 @@ const fontWeight = "bold"
 			{finished && <p>I finished this tutorial! このチュートリアルを終えました！</p>}
 			{goal === 3 ? <p>My goal is to finish in 3 days. 3日で終えるのが目標です。</p> : <p>My goal is not 3 days. 3日が目標ではありません。</p>}
 		</body>
+		<Footer />
 	</html>
 </Layout>
 

@@ -1,13 +1,14 @@
 ---
+import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
 const items = ["犬", "猫", "鳥"];
 ---
 
 <Layout title="Welcome to Astro.">
-    <a href="/">ホーム</a>
-    <a href="/about/">概要</a>
-    <a href="/blog/">ブログ</a>
+	<Header />
 
 	<main>
         <body>
@@ -21,6 +22,7 @@ const items = ["犬", "猫", "鳥"];
 			</ul>
         </body>
 	</main>
+	<Footer />
 </Layout>
 
 <style>
