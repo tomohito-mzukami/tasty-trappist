@@ -2,6 +2,7 @@ html {
     font-family: system-ui, sans-serif;
     background: #13151a;
     background-size: 224px;
+    color:white;
 }
   
 body {
@@ -21,7 +22,6 @@ h1 {
     font-size: 2.5rem;
 }
 footer {
-    color:white;
     margin: 0 auto;
     width: 100%;
     max-width: 80ch;

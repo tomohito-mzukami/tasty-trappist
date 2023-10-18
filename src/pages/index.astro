@@ -1,13 +1,13 @@
 ---
-import Header from '../components/Header.astro';
-import Layout from '../layouts/Layout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 import Card from '../components/Card.astro';
 import '../styles/global.css';
+const pageTitle = "ホームページ"
 const items = ["犬", "猫", "鳥"];
-import Footer from '../components/Footer.astro';
 ---
-
-<Layout title="Welcome to Astro.">
+<BaseLayout pageTitle={pageTitle}>
+	<h2>私の素晴らしいブログのサブタイトル</h2>
+</BaseLayout>
 	<main>
 		<svg
 			class="astro-a"
@@ -37,8 +37,6 @@ import Footer from '../components/Footer.astro';
 				</linearGradient>
 			</defs>
 		</svg>
-		<Header />
-		<h1>私のAstroサイト</h1>
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
@@ -66,9 +64,6 @@ import Footer from '../components/Footer.astro';
 			/>
 		</ul>
 	</main>
-	<Footer />
-	<script>import "../scripts/menu.js";</script>
-</Layout>
 
 <style>
 	main {
