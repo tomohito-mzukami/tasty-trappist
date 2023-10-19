@@ -4,7 +4,10 @@ html {
     background-size: 224px;
     color:white;
 }
-  
+html.dark {
+  background-color: #0d0950;
+  color: #fff;
+}
 body {
     margin: 0 auto;
     width: 100%;
@@ -64,6 +67,9 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
   gap: 2rem;
   padding: 0;
+}
+.dark .nav-links a {
+  color: #fff;
 }
 h1 {
     font-weight: 700;

@@ -3,10 +3,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Card from '../components/Card.astro';
 const pageTitle = "ホームページ"
 const midashi = "ようこそ";
+import Greeting from '../components/Greeting.jsx';
 const items = ["犬", "猫", "鳥"];
 ---
 <BaseLayout pageTitle={pageTitle}, midashi={midashi}>
 	<h2>私の素晴らしいブログのサブタイトル</h2>
+	<Greeting messages={["犬", "猫", "鳥"]} />
+	<Greeting client:load messages={["どうも", "こんにちは", "初めまして", "ようこそ"]} />
+	<Greeting client:visible messages={["Hej", "Hallo", "Hola", "Habari"]} />
 </BaseLayout>
 	<main>
 		<svg
